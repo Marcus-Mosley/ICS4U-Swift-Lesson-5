@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//
+// Main.swift
+// Lesson 5 - War
+//
+// Created by Marcus A. Mosley on 2021-01-19
+//
+
+import SwiftUI
+import UIKit
+import PlaygroundSupport
+
+let backing: UIImage = #imageLiteral(resourceName: "background.jpg")
+let war: UIImage = #imageLiteral(resourceName: "logo.png")
+let deal: UIImage = #imageLiteral(resourceName: "dealbutton.png")
+let card3: UIImage = #imageLiteral(resourceName: "card3.png")
+let card4: UIImage = #imageLiteral(resourceName: "card4.png")
+
+struct ContentView: View {
+    var body: some View {
+        ZStack {
+            Image(uiImage: backing)
+                .ignoresSafeArea()
+            VStack() {
+                Spacer()
+                Image(uiImage: war)
+                Spacer()
+                HStack() {
+                    Spacer()
+                    Image(uiImage: card3)
+                    Spacer()
+                    Image(uiImage: card4)
+                    Spacer()
+                }
+                Spacer()
+                Image(uiImage: deal)
+                Spacer()
+                HStack() {
+                    Spacer()
+                    VStack() {
+                        Text("Player")
+                            .font(.headline)
+                            .foregroundColor(Color.white)
+                            .padding(.bottom, 10.0)
+                        Text("0")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                    }
+                    Spacer()
+                    VStack() {
+                        Text("CPU")
+                            .font(.headline)
+                            .foregroundColor(Color.white)
+                            .padding(.bottom, 10.0)
+                        Text("0")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                    }
+                    Spacer()
+                }
+                Spacer()
+            }
+        }
+    }
+}
+
+PlaygroundPage.current.setLiveView(ContentView())
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2022}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
